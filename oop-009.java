@@ -7,8 +7,11 @@
 * In overloading method resolution is taken care by compiler based on the argument reference type.
 * In overridding method resolution is taken care by JVM based on the runtime object(actual object).
 *
-*
+* In overloading method name must be same 
 * In overridding method signature must be same
+*
+* In overridding scope of the access modifier can't be reduced.
+* Access modifiers : public > protected > <default> > private
 */
 
 

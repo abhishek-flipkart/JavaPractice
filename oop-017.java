@@ -1,3 +1,5 @@
+// Topic : Method Overridding
+
 class Parent {
     
     static void m1() {
@@ -10,6 +12,9 @@ class Parent {
         Child.m1();
         Child c = new Child(); // has-a relaionship
         c.m3();
+        
+        Parent p = new Child();
+        p.m1();     // Since static method can't be overridden(call parent)
     }
 }
 
