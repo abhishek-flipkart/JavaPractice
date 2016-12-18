@@ -28,6 +28,9 @@ class Parent {
         System.out.println("Parent class: m3 : final");
     }
     
+    final void m3(int a){
+        System.out.println("Parent class: m3 with arg: final");
+    }
 }
 
 class Child extends Parent {
@@ -49,6 +52,7 @@ class Child extends Parent {
         c.m1();
         c.m2();
         c.m3();
+        c.m3(5);
         System.out.println("----------------Overidding--------------");
         Parent p = new Child();
         p.m1();
